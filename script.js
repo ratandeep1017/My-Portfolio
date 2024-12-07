@@ -79,27 +79,27 @@ $(document).ready(function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const homeContainer = document.querySelector(".home");
-    const backgroundContainer = document.querySelector(".background-container");
-    let imageIndex = 1;
-    const imageCount = 5;
-    const preloadedImages = [];
+// document.addEventListener("DOMContentLoaded", function () {
+//     const homeContainer = document.querySelector(".home");
+//     const backgroundContainer = document.querySelector(".background-container");
+//     let imageIndex = 1;
+//     const imageCount = 5;
+//     const preloadedImages = [];
 
-    // Preload images
-    for (let i = 1; i <= imageCount; i++) {
-        const img = new Image();
-        img.src = `images/${i}.jpg`;
-        preloadedImages.push(img);
-    }
+//     // Preload images
+//     for (let i = 1; i <= imageCount; i++) {
+//         const img = new Image();
+//         img.src = `images/${i}.jpg`;
+//         preloadedImages.push(img);
+//     }
 
-    function changeBackground() {
-        homeContainer.style.backgroundImage = `url("images/${imageIndex}.jpg")`;
-        imageIndex = (imageIndex % imageCount) + 1; // Loop through images 1.jpg to 7.jpg
-    }
+//     function changeBackground() {
+//         homeContainer.style.backgroundImage = `url("images/${imageIndex}.jpg")`;
+//         imageIndex = (imageIndex % imageCount) + 1; // Loop through images 1.jpg to 7.jpg
+//     }
 
-    setInterval(changeBackground, 5000); // Change background every 5 seconds
-});
+//     setInterval(changeBackground, 5000); // Change background every 5 seconds
+// });
 
 
 // function updateMailto() {
