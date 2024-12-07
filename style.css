@@ -190,7 +190,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("images/4.jpg") no-repeat center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("images/4.jpg");
     height: 100vh;
     color: #fff;
     min-height: 500px;
