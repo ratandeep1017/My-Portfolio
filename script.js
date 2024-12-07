@@ -79,50 +79,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-function updateMailto() {
-    // Get the values from the input fields
-    var nameValue = document.getElementById("nameInput").value;
-    var emailValue = document.getElementById("emailInput").value;
-    var subjectValue = document.getElementById("subjectInput").value;
-    var messageValue = document.getElementById("messageInput").value;
-
-    // Set the email address
-    var emailAddress = "ratandeep1017@gmail.com";
-
-    // Construct the mailto link with name, email, subject, and message
-    var mailtoLink = "mailto:" + encodeURIComponent(emailAddress)
-        + "?subject=" + encodeURIComponent(subjectValue)
-        + "&body=Your Name: " + encodeURIComponent(nameValue)
-        + "%0AYour Email: " + encodeURIComponent(emailValue)
-        + "%0AYour Main Message: " + encodeURIComponent(messageValue);
-
-    // Update the form action with the mailto link
-    document.getElementById("contactForm").action = mailtoLink;
-
-    // Submit the form
-    document.getElementById("contactForm").submit();
-}
-
-
-
-function isAnyFieldEmpty() {
-    // Get values of input fields
-    var nameValue = document.getElementById('nameInput').value;
-    var emailValue = document.getElementById('emailInput').value;
-    var subjectValue = document.getElementById('subjectInput').value;
-    var messageValue = document.getElementById('messageInput').value;
-
-    // Check if any field is empty
-    if (nameValue.trim() === '' || emailValue.trim() === '' || subjectValue.trim() === '' || messageValue.trim() === '') {
-        return true; // Some field is empty
-    }
-
-    return false; // All fields are filled
-}
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const homeContainer = document.querySelector(".home");
     const backgroundContainer = document.querySelector(".background-container");
@@ -144,3 +100,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(changeBackground, 5000); // Change background every 5 seconds
 });
+
+
+// function updateMailto() {
+//     // Get the values from the input fields
+//     var nameValue = document.getElementById("nameInput").value;
+//     var emailValue = document.getElementById("emailInput").value;
+//     var subjectValue = document.getElementById("subjectInput").value;
+//     var messageValue = document.getElementById("messageInput").value;
+
+//     // Set the email address
+//     var emailAddress = "ratandeep1017@gmail.com";
+
+//     // Construct the mailto link with name, email, subject, and message
+//     var mailtoLink = "mailto:" + encodeURIComponent(emailAddress)
+//         + "?subject=" + encodeURIComponent(subjectValue)
+//         + "&body=Your Name: " + encodeURIComponent(nameValue)
+//         + "%0AYour Email: " + encodeURIComponent(emailValue)
+//         + "%0AYour Main Message: " + encodeURIComponent(messageValue);
+
+//     // Update the form action with the mailto link
+//     document.getElementById("contactForm").action = mailtoLink;
+
+//     // Submit the form
+//     document.getElementById("contactForm").submit();
+// }
+
+
+
+// function isAnyFieldEmpty() {
+//     // Get values of input fields
+//     var nameValue = document.getElementById('nameInput').value;
+//     var emailValue = document.getElementById('emailInput').value;
+//     var subjectValue = document.getElementById('subjectInput').value;
+//     var messageValue = document.getElementById('messageInput').value;
+
+//     // Check if any field is empty
+//     if (nameValue.trim() === '' || emailValue.trim() === '' || subjectValue.trim() === '' || messageValue.trim() === '') {
+//         return true; // Some field is empty
+//     }
+
+//     return false; // All fields are filled
+// }
+
+
