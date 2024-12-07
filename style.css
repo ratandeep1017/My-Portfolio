@@ -769,6 +769,9 @@ footer span a:hover {
         width: 100%;
         margin-bottom: 35px;
     }
+    .mainimage img {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -790,6 +793,9 @@ footer span a:hover {
 
     .services .serv-content .card {
         width: 100%;
+    }
+    .mainimage img {
+        margin-top: 10px;
     }
 }
 
@@ -828,8 +834,8 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
-    .mainimage {
-margin-top: 10px;
+    .mainimage img {
+        margin-top: 10px;
     }
 }
 
